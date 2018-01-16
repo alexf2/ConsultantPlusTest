@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF3E1BBB-CCC7-4204-8687-17B6D26291AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ifx.FoundationHelpers</RootNamespace>
+    <AssemblyName>FoundationHelpers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General\AssemblyAttributes.cs" />
+    <Compile Include="General\AwaitHelpers.cs" />
+    <Compile Include="General\ConfigCollectionBase.cs" />
+    <Compile Include="General\ConfigHelper.cs" />
+    <Compile Include="General\DataHelpers.cs" />
+    <Compile Include="General\EnumUtils.cs" />
+    <Compile Include="General\IAbstractLogger.cs" />
+    <Compile Include="General\IAbstractLoggerFactory.cs" />
+    <Compile Include="General\IMonitorable.cs" />
+    <Compile Include="General\MarkHlp.cs" />
+    <Compile Include="General\MonadExtensions.cs" />
+    <Compile Include="General\Partitioner.cs" />
+    <Compile Include="General\PathHelper.cs" />
+    <Compile Include="General\ResourceHelpers.cs" />
+    <Compile Include="General\SafeReleasers.cs" />
+    <Compile Include="General\ServerMonitor.cs" />
+    <Compile Include="General\XmlSectionHandler.cs" />
+    <Compile Include="Mail\IMailMessage.cs" />
+    <Compile Include="Mail\ISmpClient.cs" />
+    <Compile Include="Mail\ISmtpClientFactory.cs" />
+    <Compile Include="Mail\MailServerSender.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuntimeModel\IRuntimeHost.cs" />
+    <Compile Include="RuntimeModel\IRuntimeService.cs" />
+    <Compile Include="RuntimeModel\RuntimeServiceBase.cs" />
+    <Compile Include="RuntimeModel\RuntimeServiceStateDef.cs" />
+    <Compile Include="Security\CustomUserAuthenticator.cs" />
+    <Compile Include="Security\UserIdentityBase.cs" />
+    <Compile Include="Security\UserPrincipalBase.cs" />
+    <Compile Include="Security\UsersCache.cs" />
+    <Compile Include="StateMachine\IStateMachine.cs" />
+    <Compile Include="StateMachine\StateMachineBuilder.cs" />
+    <Compile Include="StateMachine\TransitionDef.cs" />
+    <Compile Include="StateMachine\StateDef.cs" />
+    <Compile Include="StateMachine\StateMachine.cs" />
+    <Compile Include="Threading\SingleThreadSequentialExecuter.cs" />
+    <Compile Include="Threading\ThreadPoolSequentialExecuter.cs" />
+    <Compile Include="RuntimeModel\IServiceHostBootstrap.cs" />
+    <Compile Include="WinServices\ServiceDebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinServices\ServiceDebugForm.Designer.cs">
+      <DependentUpon>ServiceDebugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinServices\ServiceRegistrationUtility.cs" />
+    <Compile Include="WinServices\WinServiceHostBootstrap.cs" />
+    <Compile Include="WinServices\WinServiceHostBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Win32\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WinServices\ServiceDebugForm.resx">
+      <DependentUpon>ServiceDebugForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

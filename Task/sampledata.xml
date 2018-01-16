@@ -1,0 +1,28 @@
+<my:Data my:attrib1="" xmlns:my="http:/consultant.ru/nris/test">
+	<my:attrib2/>
+	<my:Entity>
+		<my:RichText/>
+		<my:Entity>
+			<my:RichText/>
+		</my:Entity>
+	</my:Entity>
+	<my:Group1>
+		<my:Entity>
+			<my:RichText/>
+			<my:Entity>
+				<my:RichText/>
+				<my:Entity>
+					<my:RichText/>
+				</my:Entity>
+			</my:Entity>
+		</my:Entity>
+	</my:Group1>
+	<my:Group2>
+		<my:Entity>
+			<my:RichText/>
+			<my:Entity>
+				<my:RichText/>
+			</my:Entity>
+		</my:Entity>
+	</my:Group2>
+</my:Data>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<my:Data my:attrib1="Test data" xmlns:my="http:/consultant.ru/nris/test" xml:lang="ru">
+	<my:attrib2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2011-07-20</my:attrib2>
+	<my:Entity>
+		<my:RichText><![CDATA[Some xhtml-text goes here..]]></my:RichText>
+		<my:Entity>
+			<my:RichText><![CDATA[Some xhtml-text goes here..]]></my:RichText>
+		</my:Entity>
+	</my:Entity>
+	<my:Group1>
+		<my:Entity>
+			<my:RichText><![CDATA[<span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 12pt"><font face="Times New Roman">Тестовое задание для кандидата.</font></span>]]></my:RichText>
+			<my:Entity>
+				<my:RichText><![CDATA[<font xmlns="http://www.w3.org/1999/xhtml" face="Times New Roman">Описание: разработать простой вьюер xml-заданий для кандидатов.</font>]]></my:RichText>
+				
+			<my:Entity>
+									<my:RichText><![CDATA[<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt">использовать  MS VC#</li></ul>]]></my:RichText>
+									
+								<my:RichText><![CDATA[<font xmlns="http://www.w3.org/1999/xhtml" face="Times New Roman">
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 12pt"><font face="Times New Roman">тип приложения – SDI</font>
+</li><ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml"></ul></ul></font>]]></my:RichText><my:RichText><![CDATA[<font xmlns="http://www.w3.org/1999/xhtml" face="Times New Roman"><span style="FONT-SIZE: 12pt">для показа </span><span style="FONT-SIZE: 12pt">html</span><span style="FONT-SIZE: 12pt">-контента использовать любой подходящий компонент</span></font>]]></my:RichText><my:RichText><![CDATA[<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 12pt"><font face="Times New Roman">окно должно содержать три фрейма:</font></li></ul>]]></my:RichText><my:Entity>
+									<my:RichText><![CDATA[<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" start="1">
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 12pt"><font face="Times New Roman">левый фрейм – содержит дерево со структурой директорий (как в Windows Explorer)</font></li></ul></ul>]]></my:RichText>
+									
+								<my:RichText><![CDATA[<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" start="1">
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 12pt"><font face="Times New Roman">правый-верхний фрейм – содержит файлы и поддиректории, находящиеся в директории, выбранной в левом фрейме</font></li></ul></ul>]]></my:RichText><my:RichText><![CDATA[<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" start="1">
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 12pt"><font face="Times New Roman">правый-нижний фрейм – показывает содержимое xml-документа, выбранное в правом-верхнем фрейме</font></li></ul></ul>]]></my:RichText><my:RichText><![CDATA[<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" start="1">
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="MARGIN-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; MARGIN-BOTTOM: 0pt; FONT-SIZE: 12pt"><font face="Times New Roman">Отображение содержимого xml-документа – должна быть отображена иерархия текстов, отображается только содержимое тэга "RichText"</font></li></ul></ul>]]></my:RichText></my:Entity></my:Entity></my:Entity>
+		<my:Entity>
+									<my:RichText><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml">Пример окна:</font></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml">  </font></div>
+<div xmlns="http://www.w3.org/1999/xhtml">
+<table style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 384px; BORDER-COLLAPSE: collapse; WORD-WRAP: break-word; TABLE-LAYOUT: fixed; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="msoUcTable" tabIndex="-1" border="1" borderColor="buttontext">
+<colgroup>
+<col style="WIDTH: 192px"/>
+<col style="WIDTH: 192px"/></colgroup>
+<tbody vAlign="top">
+<tr style="MIN-HEIGHT: 111px">
+<td rowSpan="2">
+<div>дерево папок</div></td>
+<td>
+<div>папки и файлы</div></td></tr>
+<tr style="MIN-HEIGHT: 89px">
+<td>
+<div>содержимое xml</div></td></tr></tbody></table></div>]]></my:RichText><my:RichText><![CDATA[<font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml"></font>]]></my:RichText><my:RichText><![CDATA[<font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml"></font>]]></my:RichText>
+									
+								</my:Entity></my:Entity>
+	<my:Entity>
+									<my:RichText><![CDATA[<font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml"><strong>1) Для обработки xml должно быть применено XSLT.</strong></font>]]></my:RichText>
+									
+								<my:RichText><![CDATA[<font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml"><em>2) Желательно отображение построить с jQuery</em></font>]]></my:RichText><my:RichText><![CDATA[<font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml"><u>3) Файлы схемы и примера данных прилагаются.</u></font>]]></my:RichText></my:Entity></my:Group1>
+	<my:Group2>
+		<my:Entity>
+			<my:RichText><![CDATA[<div xmlns="http://www.w3.org/1999/xhtml"><font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml">Реализация любых дополнительных возможностей будет приветствоваться. </font></div>
+<div xmlns="http://www.w3.org/1999/xhtml">Предлагайте, высылайте промежуточные результаты.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"><font face="Times New Roman" xmlns="http://www.w3.org/1999/xhtml">Спасибо!</font></div>]]></my:RichText>
+			
+		</my:Entity>
+	</my:Group2>
+</my:Data>
